@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8faf9;
+    color: #191c1c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    user-select: none;
+  }
+
+  .material-symbols-outlined.filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .btn-primary {
+    @apply bg-primary-gradient text-on-primary font-bold font-headline rounded-xl px-6 py-3 flex items-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20;
+  }
+
+  .btn-secondary {
+    @apply bg-surface-container-high text-primary font-bold font-headline rounded-xl px-6 py-3 flex items-center gap-2 hover:bg-surface-container-highest transition-all;
+  }
+
+  .card {
+    @apply bg-surface-container-lowest rounded-3xl shadow-card;
+  }
+
+  .card-surface {
+    @apply bg-surface-container-low rounded-3xl;
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-xl bg-emerald-50/50;
+  }
+
+  .glass-header {
+    @apply backdrop-blur-md bg-white/60;
+  }
+
+  .macro-tag {
+    @apply px-2 py-0.5 bg-surface-container-low rounded text-[10px] font-medium text-on-surface-variant;
+  }
+
+  .vitality-gradient {
+    background: linear-gradient(135deg, #006e2d 0%, #32c65f 100%);
+  }
+
+  .input-field {
+    @apply w-full bg-surface-container-low border-none rounded-xl py-3 px-4 text-sm font-body text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #006e2d 0%, #32c65f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
