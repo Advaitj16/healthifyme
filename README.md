@@ -70,9 +70,6 @@ This is a hackathon prototype, and it can be extended further with:
 
 This project was developed as a **prototype for a hackathon** under the **Health & Food** problem statement. It demonstrates the core idea and potential workflow of a health-focused food tracking and recommendation platform.
 
-## 📷 Demo / Screenshots
-
-*Add your screenshots, demo video link, or prototype preview here.*
 
 ## 🤝 Contributors
 
